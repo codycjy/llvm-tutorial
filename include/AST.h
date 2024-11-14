@@ -8,7 +8,7 @@
 //===----------------------------------------------------------------------===//
 // Abstract Syntax Tree (AST)
 //===----------------------------------------------------------------------===//
-namespace {
+namespace kaleidoscope {
 
 /// ExprAST - Base class for all expression nodes.
 class ExprAST {
@@ -79,5 +79,4 @@ public:
       : Proto(std::move(Proto)), Body(std::move(Body)) {}
 };
 
-} // end anonymous namespace
-
+} // namespace kaleidoscope

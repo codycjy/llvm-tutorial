@@ -1,6 +1,7 @@
 #include "driver.h"
 #include "parser.h"
 #include "lexer.h"
+using namespace kaleidoscope;
 void HandleDefinition() {
   if (ParseDefinition()) {
     fprintf(stderr, "Parsed a function definition.\n");

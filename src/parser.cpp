@@ -1,6 +1,7 @@
 #include "lexer.h"
 #include "parser.h"
 
+namespace kaleidoscope {
 int CurTok;  // 定义全局变量
 std::map<char, int> BinopPrecedence;  // 定义全局变量
 int getNextToken() { return CurTok = gettok(); }
@@ -202,3 +203,4 @@ std::unique_ptr<PrototypeAST> ParseExtern() {
   return ParsePrototype();
 }
 
+}  // namespace kaleidoscope

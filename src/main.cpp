@@ -8,14 +8,14 @@
 int main() {
   // Install standard binary operators.
   // 1 is lowest precedence.
-  BinopPrecedence['<'] = 10;
-  BinopPrecedence['+'] = 20;
-  BinopPrecedence['-'] = 20;
-  BinopPrecedence['*'] = 40; // highest.
+  kaleidoscope::BinopPrecedence['<'] = 10;
+  kaleidoscope::BinopPrecedence['+'] = 20;
+  kaleidoscope::BinopPrecedence['-'] = 20;
+  kaleidoscope::BinopPrecedence['*'] = 40; // highest.
 
   // Prime the first token.
   fprintf(stderr, "ready> ");
-  getNextToken();
+  kaleidoscope::getNextToken();
 
   // Run the main "interpreter loop" now.
   MainLoop();
